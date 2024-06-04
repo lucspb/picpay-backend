@@ -1,4 +1,7 @@
 package com.picpayproj.domain.user;
 
-public class UserType {
+public enum UserType {
+
+    COMMON,
+    MERCHANT
 }
