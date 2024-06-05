@@ -23,6 +23,7 @@ public class TransactionService {
     @Autowired
     private UserService userService;
 
+    @Autowired
     private RestTemplate restTemplate;
 
     public void createTransaction(TransactionDTO transaction) throws Exception {
