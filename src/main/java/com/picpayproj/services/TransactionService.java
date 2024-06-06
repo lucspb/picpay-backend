@@ -41,7 +41,7 @@ public class TransactionService {
         novaTransaction.setAmount(transaction.value());
         novaTransaction.setSender(sender);
         novaTransaction.setReceiver(receiver);
-        novaTransaction.setHour(LocalDateTime.now());
+        novaTransaction.setTimeStamp(LocalDateTime.now());
 
         sender.setBalance(sender.getBalance().subtract(transaction.value()));
         receiver.setBalance(receiver.getBalance().add(transaction.value()));
